@@ -1,0 +1,81 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+}
+.add-note>span {
+    margin-right: 10px;
+}
+
+.bulb-icon-wrapper {
+    position: relative;
+    left: 30vw;
+    top: 20vh;
+}
+
+.hero-text {
+    position: absolute;
+    top: 125px;
+    left: -87px;
+    width: 190px;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.bulb-icon {
+    scale: 14;
+    fill: #a9a9a9;
+}
+
+.note-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 107px;
+}
+
+.list-view {
+    margin-inline: auto;
+    flex-direction: column;
+}
+
+.list-view>div {
+    min-width: 650px;
+}
+
+.add-note:hover {
+    animation: shik 1s;
+}
+
+@keyframes shik {
+    25% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes shake {
+    25% {
+        transform: rotate(-75deg);
+    }
+    75% {
+        transform: rotate(75deg);
+    }
+}
+
+@media screen and (max-width: 400px) and (max-height: 1200px) {
+    .bulb-icon {
+        left: 17vw;
+        scale: 8;
+    }
+}

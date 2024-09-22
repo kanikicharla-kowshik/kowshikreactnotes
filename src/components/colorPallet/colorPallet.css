@@ -1,0 +1,23 @@
+.color-icon {
+    scale: 1.2;
+}
+
+.colors-box {
+    display: none;
+    position: relative;
+    top: 5px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    padding: 3px 7px;
+    gap: 8px;
+    background-color: white;
+}
+
+
+.color-pallet:hover .color-pallet-icon {
+    display: none;
+}
+
+.color-pallet:hover .colors-box {
+    display: flex;
+}
